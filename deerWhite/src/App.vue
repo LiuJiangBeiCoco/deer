@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    hello Danio
+    step1
     <router-view/>
   </div>
 </template>
