@@ -7,7 +7,7 @@
       <div class="logo"/>
       <a-menu theme="dark" mode="inline" :defaultSelectedKeys="[selectedNav]">
         <a-menu-item v-for=" item in asideNav" :key="item.defaultSelectedKeys" @click="navHandle(item)">
-          <router-link :to="item.link">
+          <router-link :to="item.link" class="navItem">
             <a-icon :type="item.icon"/>
             <span>{{item.name}}</span>
           </router-link>
@@ -61,7 +61,7 @@ export default {
  }
 }
 </script>
-<style>
+<style scoped>
 #components-layout-demo-custom-trigger .trigger {
   font-size: 18px;
   line-height: 64px;
@@ -76,9 +76,35 @@ export default {
   background: #648E8A url(./assets/images/logo.jpg) no-repeat center;
   background-size: 32px 32px;
   margin: 14pX 10px;
-  height: 40px;;
+  height: 40px;
 }
 .ant-layout{
   height: 100%;
+}
+.ant-menu-item,.ant-menu-item .anticon{
+  font-size: 16px!important;
+}
+.ant-menu-item:hover .navItem{
+  animation:navSlide .4s linear;
+  animation-fill-mode : forwards;
+}
+@keyframes navSlide {
+  from{
+    transform:translateX(0)
+  }
+   to{
+    transform:translateX(20px)
+  }
+}
+.ant-layout-sider{
+    min-width: 230px!important;
+    background: #2F343C url(./assets/images/nav.png) no-repeat  bottom;
+}
+.ant-menu-dark{
+  background: transparent;
+}
+.ant-menu.ant-menu-dark .ant-menu-item-selected{
+    background: transparent url(./assets/images/bar.png) no-repeat;
+    height: 40px;
 }
 </style>
