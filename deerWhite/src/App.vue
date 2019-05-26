@@ -74,8 +74,8 @@ export default {
   color: #1890ff;
 }
 #components-layout-demo-custom-trigger .logo {
-  background: #648E8A url(./assets/images/logo.jpg) no-repeat center;
-  background-size: 32px 32px;
+  background:  url(./assets/images/logo.png) no-repeat ;
+  background-size: 210px 40px;
   margin: 14pX 10px;
   height: 40px;
 }
