@@ -2,6 +2,7 @@
   <a-layout id="components-layout-demo-custom-trigger">
     <a-layout-sider
       :trigger="null"
+      width = "230"
       collapsible
       v-model="collapsed">
       <div class="logo"/>
@@ -34,7 +35,7 @@ import {mapState,mapMutations} from 'vuex'
 export default {
   data(){
     return {
-      collapsed: false,
+      collapsed: false,//默认导航展开还是折叠
       asideNav:[
         {name:'首页',icon:'home',link:'/home',defaultSelectedKeys:'home'},
         {name:'订单管理',icon:'ordered-list',link:'/order',defaultSelectedKeys:'order'},
@@ -97,7 +98,6 @@ export default {
   }
 }
 .ant-layout-sider{
-    min-width: 230px!important;
     background: #2F343C url(./assets/images/nav.png) no-repeat  bottom;
 }
 .ant-menu-dark{
