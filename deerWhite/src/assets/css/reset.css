@@ -302,3 +302,7 @@ align-self 属性允许单个项目有与其他项目不一样的对齐方式，
     flex: 1;
 }
 /* 如果竖直方向占据剩余空间，要设置父级元素flex-direction:column;   */
+
+html,body{
+    height: 100%;
+}

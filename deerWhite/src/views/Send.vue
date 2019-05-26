@@ -1,9 +1,10 @@
 <template>
-    <div>首页</div>
+    <div>发货管理</div>
 </template>
 
 <script>
 export default {
+
 }
 </script>
 

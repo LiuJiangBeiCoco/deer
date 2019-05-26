@@ -1,9 +1,10 @@
 <template>
-    <div>首页</div>
+    <div>代金券管理</div>
 </template>
 
 <script>
 export default {
+
 }
 </script>
 

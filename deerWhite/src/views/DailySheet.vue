@@ -1,9 +1,10 @@
 <template>
-    <div>首页</div>
+    <div>日结报告</div>
 </template>
 
 <script>
 export default {
+
 }
 </script>
 
